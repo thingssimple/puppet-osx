@@ -27,10 +27,9 @@ class osx::appearance::colors(
 
   if $highlight != undef {
 
-    validate_re($highlight, '^(graphite)$', "osx::appearance::colors[highlight] must be one of the following: graphite; is ${highlight}")
-
     case $highlight {
       'graphite':  { $highlight_color = '0.780400 0.815700 0.858800' }
+      'purple'  :  { $highlight_color = '0.913700 0.721600 1.000000' }
       default:     { $highlight_color = $highlight }
     }
 
