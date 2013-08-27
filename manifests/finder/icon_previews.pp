@@ -24,7 +24,7 @@ class osx::finder::icon_previews($ensure = 'present') {
     notify => [
       Exec['killall Finder'],
       Exec['Remove All .DS_Store Files'],
-      Exec['Remove All Existing Icon Previews'],
+      Boxen::Osx_defaults['Remove All Existing Icon Previews'],
     ],
   }
 
