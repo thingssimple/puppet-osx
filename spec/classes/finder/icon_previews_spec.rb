@@ -14,63 +14,63 @@ describe 'osx::finder::icon_previews' do
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :FK_StandardViewSettings:ListViewSettings:showIconPreview true' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :FK_StandardViewSettings:ExtendedListViewSettings:showIconPreview true' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :StandardViewSettings:IconViewSettings:showIconPreview true' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :StandardViewSettings:ListViewSettings:showIconPreview true' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :StandardViewSettings:ExtendedListViewSettings:showIconPreview true' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :ComputerViewSettings:IconViewSettings:showIconPreview true' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :ComputerViewSettings:ListViewSettings:showIconPreview true' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :ComputerViewSettings:ExtendedListViewSettings:showIconPreview true' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
     end
@@ -94,63 +94,63 @@ describe 'osx::finder::icon_previews' do
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :FK_StandardViewSettings:ListViewSettings:showIconPreview false' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :FK_StandardViewSettings:ExtendedListViewSettings:showIconPreview false' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :StandardViewSettings:IconViewSettings:showIconPreview false' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :StandardViewSettings:ListViewSettings:showIconPreview false' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :StandardViewSettings:ExtendedListViewSettings:showIconPreview false' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :ComputerViewSettings:IconViewSettings:showIconPreview false' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :ComputerViewSettings:ListViewSettings:showIconPreview false' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
       should contain_exec("/usr/libexec/plistbuddy -c 'Set :ComputerViewSettings:ExtendedListViewSettings:showIconPreview false' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
         :notify => [
           'Exec[killall Finder]',
           'Exec[Remove All .DS_Store Files]',
-          'Exec[Remove All Existing Icon Previews]',
+          'Boxen::Osx_defaults[Remove All Existing Icon Previews]',
         ],
       })
     end

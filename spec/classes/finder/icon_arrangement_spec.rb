@@ -30,13 +30,6 @@ describe 'osx::finder::icon_arrangement' do
       ]
     })
 
-    should contain_exec("/usr/libexec/plistbuddy -c 'Set :ComputerViewSettings:IconViewSettings:arrangeBy grid' /Users/ilikebees/Library/Preferences/com.apple.finder.plist").with({
-      :notify => [
-        'Exec[killall Finder]',
-        'Exec[Remove All .DS_Store Files]',
-      ]
-    })
-
   end
 
 end
